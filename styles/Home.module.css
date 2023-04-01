@@ -1,8 +1,28 @@
 .title {
   color: #333;
-  padding-bottom: 20px;
   text-align: center;
 }
 .menu {
   list-style: none;
+  display: flex;
+  
 }
+.custom{
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-left: 55rem;
+  
+}
+.a {
+ margin:0.5rem;
+ font-size:20px;
+}
+
+.a:hover{
+  background-color:red;
+}
+
+
+
+
+

@@ -1,4 +1,5 @@
 import '../styles/globals.css';
+import Navbar from '../components/Navbar';
 import {
   EthereumClient,
   w3mConnectors,
@@ -62,9 +63,10 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       {ready ? (
-        <WagmiConfig client={wagmiClient}>
+          <WagmiConfig client={wagmiClient}>
           <Component {...pageProps} />
-        </WagmiConfig>
+         </WagmiConfig>
+      
       ) : null}
 
       <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
